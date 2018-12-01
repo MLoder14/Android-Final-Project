@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#FF0000"
+    android:backgroundTint="#ffff0000"
+	android:keepScreenOn="true"
+	android:id="@+id/LinearLayout1" >
+
+    <TextView
+        android:text="Marcus Loder Final Project"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerStatus"
+        android:layout_weight="0"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:backgroundTint="#ff333333" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/color_prompt"
+		android:id="@+id/spinner1" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="120sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerTextView"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffff0000" />
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TimerButton"
+        android:layout_weight="0"
+        android:background="#8b0000"
+        android:backgroundTint="#ff8b0000"
+        android:textSize="40sp" />
+</LinearLayout>

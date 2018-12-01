@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF0000"
+    android:backgroundTint="#ffff0000"
+    android:id="@+id/RelativeLayout1"	
+	android:keepScreenOn="true">
+    <TextView
+        android:text="Marcus Loder Final Project"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerStatus"
+        android:layout_weight="1"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:backgroundTint="#ff333333" />
+		<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/color_prompt"
+		android:layout_above="@+id/StartButton"
+		android:layout_alignParentRight="true"
+		android:id="@+id/spinner1" />
+	    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="120sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerTextView"
+		android:layout_weight="1"
+        android:gravity="center"
+	    android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffff0000" />
+	<Button
+		android:id="@+id/StartButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/TimerButton"
+		android:layout_weight="0"
+		android:background="#8b0000"
+		android:backgroundTint="#ff8b0000"
+		android:textSize="40sp"
+		android:layout_gravity="bottom"
+		android:layout_alignParentBottom="true"/>
+
+	
+
+</RelativeLayout>
